@@ -5,10 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="public/style.css"/>
 </head>
 <body ng-controller="indexController as ctrl">
-    <span ng-bind="ctrl.ctrlName"></span>
-    {{ctrl.data}}
+    <form name="userform">
+            <div>
+                    <label for="userName">Username</label>
+                    <input class="form-control" type="text" id="username" name="username" ng-model="userName">
+                </div>
+                <div>
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" ng-model="userName">
+                    </div>
+                    <div>
+                      
+                            <input type="button" class="btn btn-primary" value="Submit">
+                        </div>
+    </form>
+
     <script src="public/bundle.js"></script>
 </body>
 </html>
